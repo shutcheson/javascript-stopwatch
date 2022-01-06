@@ -1,0 +1,25 @@
+/* variables */
+$orange: #ffa600;
+$grey: #f3f3f3;
+$white: #fff;
+$base-color: $orange;
+
+/* mixin's */
+@mixin transition {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin corners ($radius) {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+    -khtml-border-radius: $radius;
+}
+
+body {
+    background:$base-color;
+    font-family: "HelveticaNeue-Light";
+    height: 100%;
+}
